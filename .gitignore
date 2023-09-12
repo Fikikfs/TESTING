@@ -1,32 +1,32 @@
-# Prerequisites
-*.d
+#include <iostream>
+using namespace std;
 
-# Compiled Object files
-*.slo
-*.lo
-*.o
-*.obj
+int main() {
+    // Deklarasi variabel
+    string nama_barang;
+    double harga_barang;
+    int jumlah_barang;
 
-# Precompiled Headers
-*.gch
-*.pch
+    // Input informasi barang
+    cout << "Masukkan Nama Barang: ";
+    getline(cin, nama_barang);
+    
+    cout << "Masukkan Harga Barang: ";
+    cin >> harga_barang;
+    
+    cout << "Masukkan Jumlah Barang: ";
+    cin >> jumlah_barang;
 
-# Compiled Dynamic libraries
-*.so
-*.dylib
-*.dll
+    // Menghitung total
+    double total = harga_barang * jumlah_barang;
 
-# Fortran module files
-*.mod
-*.smod
+    // Menampilkan struk pembayaran
+    cout << "\n===== Struk Pembayaran =====" << endl;
+    cout << "Nama Barang: " << nama_barang << endl;
+    cout << "Harga Barang: " << harga_barang << endl;
+    cout << "Jumlah Barang: " << jumlah_barang << endl;
+    cout << "Total Pembayaran: " << total << endl;
+    cout << "=============================" << endl;
 
-# Compiled Static libraries
-*.lai
-*.la
-*.a
-*.lib
-
-# Executables
-*.exe
-*.out
-*.app
+    return 0;
+}
